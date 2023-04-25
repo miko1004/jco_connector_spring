@@ -1,0 +1,32 @@
+
+**** Log file opened at 20230420 173919 Korean Standard Time Rel. 3.1.6 (2022-05-18) [753.1018]
+Exception thrown [Thu Apr 20 17:39:19,515]: Exception thrown by application running in JCoServer
+com.sap.conn.jco.JCoRuntimeException: (127) JCO_ERROR_FIELD_NOT_FOUND: Field 'REQUTEXT' is not a member of record 'INPUT'
+	at com.sap.conn.jco.rt.AbstractMetaData.indexOf(AbstractMetaData.java:419)
+	at com.sap.conn.jco.rt.AbstractRecord.getString(AbstractRecord.java:3919)
+	at com.grandetree.jco_conntor_ex1.jco.server.FunctionHandler.handleRequest(FunctionHandler.java:31)
+	at com.sap.conn.jco.rt.AbstractServerWorker$FunctionDispatcher.handleRequest(AbstractServerWorker.java:988)
+	at com.sap.conn.jco.rt.AbstractServerWorker.dispatchRequest(AbstractServerWorker.java:245)
+	at com.sap.conn.jco.rt.CPICServerWorker.dispatchRequest(CPICServerWorker.java:26)
+	at com.sap.conn.jco.rt.AbstractServerConnection.dispatchRequest(AbstractServerConnection.java:2000)
+	at com.sap.conn.jco.rt.AbstractServerConnection.listen(AbstractServerConnection.java:961)
+	at com.sap.conn.jco.rt.CPICServerWorker.dispatch(CPICServerWorker.java:73)
+	at com.sap.conn.jco.rt.AbstractServerWorker.loop(AbstractServerWorker.java:350)
+	at com.sap.conn.jco.rt.AbstractServerWorker.run(AbstractServerWorker.java:316)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Exception thrown [Thu Apr 20 17:40:00,585]: Exception thrown by application running in JCoServer
+com.sap.conn.jco.JCoRuntimeException: (127) JCO_ERROR_FIELD_NOT_FOUND: Field 'REQUTEXT' is not a member of record 'INPUT'
+	at com.sap.conn.jco.rt.AbstractMetaData.indexOf(AbstractMetaData.java:419)
+	at com.sap.conn.jco.rt.AbstractRecord.getString(AbstractRecord.java:3919)
+	at com.grandetree.jco_conntor_ex1.jco.server.FunctionHandler.handleRequest(FunctionHandler.java:31)
+	at com.sap.conn.jco.rt.AbstractServerWorker$FunctionDispatcher.handleRequest(AbstractServerWorker.java:988)
+	at com.sap.conn.jco.rt.AbstractServerWorker.dispatchRequest(AbstractServerWorker.java:245)
+	at com.sap.conn.jco.rt.CPICServerWorker.dispatchRequest(CPICServerWorker.java:26)
+	at com.sap.conn.jco.rt.AbstractServerConnection.dispatchRequest(AbstractServerConnection.java:2000)
+	at com.sap.conn.jco.rt.AbstractServerConnection.listen(AbstractServerConnection.java:961)
+	at com.sap.conn.jco.rt.CPICServerWorker.dispatch(CPICServerWorker.java:73)
+	at com.sap.conn.jco.rt.AbstractServerWorker.loop(AbstractServerWorker.java:350)
+	at com.sap.conn.jco.rt.AbstractServerWorker.run(AbstractServerWorker.java:316)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+

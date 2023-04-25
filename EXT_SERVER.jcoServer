@@ -1,0 +1,11 @@
+
+#jco.server.gwhost=10.0.0.101
+#jco.server.gwserv=sapgw01
+jco.server.connection_count=10
+jco.server.mshost=10.0.0.101
+jco.server.msserv=3602
+jco.server.system_id=GED
+jco.server.r3name=GED
+jco.server.group=PUBLIC
+jco.server.progid=JCO_SERVER
+jco.server.repository_destination=ABAP_AS1
