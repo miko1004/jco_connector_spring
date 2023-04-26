@@ -71,4 +71,9 @@ public class JcoController {
         return resultMap;
     }
 
+    @GetMapping(value = "/getWSDL", produces = "text/xml")
+    public String getWSDL(@RequestParam String functionName) throws JCoException {
+        return jcoService.getWSDL(functionName);
+    }
+
 }
