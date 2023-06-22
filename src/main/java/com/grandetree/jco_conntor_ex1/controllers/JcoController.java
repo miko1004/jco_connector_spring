@@ -24,7 +24,7 @@ public class JcoController {
     private JcoService jcoService;
     JCoServer server = null;
 
-    @PostMapping("/createDestinationFile")
+    @PostMapping("/rfc/createDestinationFile")
     public HashMap<String, Object> createDestination() {
         try {
             FileWriter clientFileWriter = new FileWriter("ABAP_AS1.jcoDestination");
@@ -36,7 +36,7 @@ public class JcoController {
         return resultMap;
     }
 
-    @GetMapping("/start")
+    @GetMapping("/rfc/start")
     public HashMap<String, Object> startJcoServer() throws JCoException {
 
         HashMap<String, Object> resultMap = new HashMap<String, Object>();
@@ -56,12 +56,12 @@ public class JcoController {
         return resultMap;
     }
 
-    @GetMapping("/")
+    @GetMapping("/rfc")
     public String hello(){
         return "hello";
     }
 
-    @GetMapping("/stop")
+    @GetMapping("/rfc/stop")
     public HashMap<String, Object> stopServer() throws InterruptedException {
         HashMap<String, Object> resultMap = new HashMap<String, Object>();
         server.stop();
@@ -71,7 +71,7 @@ public class JcoController {
         return resultMap;
     }
 
-    @GetMapping(value = "/getWSDL", produces = "text/xml")
+    @GetMapping(value = "/rfc/getWSDL", produces = "text/xml")
     public String getWSDL(@RequestParam String functionName) throws JCoException {
         return jcoService.getWSDL(functionName);
     }
